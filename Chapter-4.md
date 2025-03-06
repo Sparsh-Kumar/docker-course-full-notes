@@ -8,13 +8,12 @@ Os Kernel
 Hardware
 -------------
 
-- Docker virtualizes the Application Layer
-- Virtual Machine virtualizes the OS Kernel and Applications Layer both
+- Docker virtualizes the Application Layer and uses the OS Kernel layer of the host.
+- Virtual Machine virtualizes the OS Kernel and Applications Layer both. It means when you install a Virtual Machine image on your host, it does not use host's Kernel it boots up it's own Kernel layer.
 
 - That means when you start a Virtual Machine, the VM boots up it's own Kernel and does not use the Host OS's Kernel.
 - But When you start a docker it shares the OS Kernel and just virtualizes the Application layer.
-- Due to this the Docker image size are lesser than size of Virtual Machine images, Because the VM needs to virtualize Kernel and Application Layer Both whereas 
-  Docker images have to virtualize Applications Layer only.
+- Due to this the Docker image size are lesser than size of Virtual Machine images, Because the VM needs to virtualize Kernel and Application Layer Both whereas Docker images have to virtualize Applications Layer only.
 - Also Docker containers start and run much fast as compared to Virtual Machines , because there is more Overhead for VM to bootup Kernel layer and then boot up application layer on top of it.
 
 - IMPORTANT POINTS
