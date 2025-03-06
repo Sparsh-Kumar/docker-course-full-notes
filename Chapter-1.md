@@ -27,4 +27,4 @@ How Containers improve the Application Deployment Process ?.
 - After Using Containers, The developers packages the application they develop in a isolated environment with all necessary configuration and dependencies.
 - So DevOps team is not needed to configure any dependency directly on server.
 
-IMPORTANT - With the help of docker you can have multiple versions of application running on your local system at the same port without having any conflict.
+IMPORTANT - With the help of docker you can have multiple versions of application running on your local system at the same docker port (obviously we have to bind those docker port to different host ports) without having any conflict.
