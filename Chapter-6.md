@@ -5,8 +5,8 @@ docker pull - Pull the docker image from docker repository.
 docker ps - List all running containers.
 docker images - List all docker images you have locally.
 docker stop [DOCKER_CONTAINER_ID] - Stop the running docker container having id DOCKER_CONTAINER_ID.
-docker run [IMAGE_NAME] - Runs a docker image in non-detached mode.
-docker run -d [IMAGE_NAME] - Runs a docker image in detached mode.
+docker run [IMAGE_NAME] - Runs a docker image in non-detached mode container.
+docker run -d [IMAGE_NAME] - Runs a docker image in detached mode container.
 docker ps -a - List info of all containers which are running or not running.
 docker run -p[HOST_PORT]:[CONTAINER_PORT] -d [IMAGE_NAME] - Create a container in detached mode and create a port binding b/w host port and container port and starts the container.
 docker start [CONTAINER_ID] - To Start a stopped container.
