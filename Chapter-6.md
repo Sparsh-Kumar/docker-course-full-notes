@@ -19,6 +19,10 @@ Docker Common Commands
 OR
 => docker logs [CONTAINER_NAME]
 
+=> docker logs [CONTAINER_NAME] | tail - To get last part of the logs.
+
+=> docker logs [CONTAINER_NAME] -f - To string the logs.
+
 => docker run -p[HOST_PORT]:[CONTAINER_PORT] -d --name [CONTAINER_NAME] [IMAGE_NAME] - Create a container in detached mode and create a port binding b/w host port and container port and starts the container and provide the name given in --name argument to the container.
 
 => docker run -p[HOST_PORT]:[CONTAINER_PORT] -d -e [ENVIRONMENT_VARIABLE_NAME]=[ENVIRONMENT_VARIABLE_VALUE] -e [SECOND_ENVIRONMENT_VARIABLE_NAME]=[SECOND_ENVIRONMENT_VARIABLE_VALUE] --name [CONTAINER_NAME] [IMAGE_NAME] --net [DOCKER_NETWORK_NAME] - This will start docker in detached mode as previous command but it also sets some environment variables and make this docker available in the network name specified in --net arguments.
