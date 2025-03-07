@@ -33,3 +33,5 @@ Example practical commands for docker
 
 (For setting up mongo-express container)
 => docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password -e ME_CONFIG_MONGODB_SERVER=mongodb --name mongo-express --net mongo-network mongo-express
+
+- [IMPORTANT] In the above command "ME_CONFIG_MONGODB_SERVER" is the mongodb container name, so that If both of the above containers are running in same docker network they can communicate with each other using the docker container names only.
