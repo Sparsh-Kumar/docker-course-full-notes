@@ -5,7 +5,7 @@ window.onload = function () {
   const emailHandler = document.getElementById('email');
   const submitBtnHandler = document.getElementById('submit');
 
-  fetch("http://localhost:8000/get", {
+  fetch("/get", {
     method: "GET",
     headers: {
       "Content-Type": "application/json"
@@ -26,7 +26,7 @@ window.onload = function () {
     const id = idHandler.value;
     const name = nameHandler.value;
     const email = emailHandler.value;
-    fetch(`http://localhost:8000/update/${id}`, {
+    fetch(`/update/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
