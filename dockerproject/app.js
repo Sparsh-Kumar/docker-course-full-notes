@@ -26,7 +26,10 @@ app.get('/', (req, res) => {
 app.get('/get/:id', async (req, res) => {
   try {
     const { id = '' } = req.params;
-    const userInformation = await User.findById(id);
+    let userInformation = await User.findById(id);
+    if (!userInformation) {
+      userInformation = await User.create({ name: 'Random Name', email: 'random@gmail.com' })
+    }
     return res.status(200).send({
       status: 'success',
       data: userInformation,
