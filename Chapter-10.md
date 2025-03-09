@@ -48,3 +48,8 @@ To Stop containers using .yaml file
 // here -f flag denotes file path
 // down will stop all the containers also it will remove the network that it created on doing up command.
 docker-compose -f filename down 
+
+
+
+- [IMPORTANT] Refer to the code written in the file "Chapter-10-docker-compose-example.yaml"
+
