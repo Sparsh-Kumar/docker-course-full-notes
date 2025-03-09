@@ -5,7 +5,7 @@ window.onload = function () {
   const emailHandler = document.getElementById('email');
   const submitBtnHandler = document.getElementById('submit');
 
-  fetch("http://localhost:8000/get/67cdaf8f160c9d20649f038c", {
+  fetch("http://localhost:8000/get", {
     method: "GET",
     headers: {
       "Content-Type": "application/json"

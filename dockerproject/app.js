@@ -23,10 +23,9 @@ app.get('/', (req, res) => {
   return res.status(200).sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
-app.get('/get/:id', async (req, res) => {
+app.get('/get', async (req, res) => {
   try {
-    const { id = '' } = req.params;
-    let userInformation = await User.findById(id);
+    let userInformation = await User.findOne({});
     if (!userInformation) {
       userInformation = await User.create({ name: 'Random Name', email: 'random@gmail.com' })
     }
