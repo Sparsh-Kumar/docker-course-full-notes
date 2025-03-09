@@ -2,12 +2,14 @@ require('dotenv').config();
 const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const { User } = require(path.resolve(__dirname, 'schemas'));
 const app = express();
 const port = +process.env.PORT || 8000;
 const mongoURI = process.env.MONGODB_URL || 'mongodb://localhost:27017/mydatabase';
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
