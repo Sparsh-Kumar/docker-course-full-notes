@@ -11,7 +11,7 @@
 - In .env file of the node.js application add this content
 ```
 PORT=8000
-MONGODB_URL='mongodb://localhost:27017/userdatabase'
+MONGODB_URL='mongodb://admin:password@143.110.190.93:27017/users?authSource=admin'
 ```
 
 - Now access node application using http://{{IP_ADDRESS}}:8000
