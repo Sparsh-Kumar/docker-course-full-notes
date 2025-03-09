@@ -1,5 +1,5 @@
 What is Docker Compose ?.
-- As we know that in order to run docker using command line can be a bit tedious job in specifying all the necessary configurations for running the docker container,
+- As we know that in order to run docker using command line can be a bit tedious (creating networks, ensuring same docker network is used for multiple docker containers, specifying proper arguments while container creation etc.) job in specifying all the necessary configurations for running the docker container,
 so Docker compose is basically a tool that helps us in writing the docker commands in the form of a structured .yaml file, which can be edit easily according to the need.
 
 For example - If we try to make a mongo container, then via command it is done as follows.
