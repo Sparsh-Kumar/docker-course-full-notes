@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:23-alpine
 
 ENV PORT=9000 \
     MONGODB_URL='mongodb://admin:password@143.110.190.93:27017/users?authSource=admin'
@@ -11,4 +11,4 @@ WORKDIR /home/source
 
 RUN npm install
 
-CMD ["node" "app.js"]
+CMD ["node", "app.js"]
