@@ -31,5 +31,7 @@
 
 - [IMPORTANT] - Checkout for "Dockerfile" in the "dockerproject".
 
+- [IMPORTANT] - When we use "FROM node:13-alpine" in the "Dockerfile", we mean that this image we are going to use as our base image of the application. Now even this image "node:13-alpine" is built on the top of "alpine" image. So what happens is that, someone create a "Dockerfile" with "alpine" as base image and include all the commands necessary for installation & setup of "node:13.xx.xx" environment. It then build image using that "Dockerfile" and push that into "DockerHub" as "node:13-alpine".
 
+- [IMPORTANT] - So instead of using "alpine" as base image and installing "node:13.xx.xx" environment, we directly fetch and use this "node:13-alpine" image from Dockerhub as our base image. Please refer this file ('./images/BaseDockerImagesLayers.png')
 
