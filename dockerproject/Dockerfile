@@ -1,10 +1,10 @@
-FROM node:13-alpine
+FROM node:latest
 
 ENV PORT=9000 \
     MONGODB_URL='mongodb://admin:password@143.110.190.93:27017/users?authSource=admin'
 
-RUN mkdir -p /home/app
+RUN mkdir -p /home/source
 
-COPY . /home/app
+COPY . /home/source
 
-CMD ["node" "app.js"]
+CMD ["node" "/home/source/app.js"]
