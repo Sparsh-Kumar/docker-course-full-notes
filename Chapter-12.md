@@ -18,3 +18,5 @@ docker images
 ```
 
 - [IMPORTANT] - When you adjust anything in "Dockerfile". You must re-build the image using the above command.
+
+- Once you can see you image using ```docker images```. You can run the image using ```docker run {{IMAGE_NAME}}:{{TAG}}```
