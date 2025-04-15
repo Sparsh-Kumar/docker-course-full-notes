@@ -7,4 +7,8 @@ RUN mkdir -p /home/source
 
 COPY . /home/source
 
-CMD ["node" "/home/source/app.js"]
+WORKDIR /home/source
+
+RUN npm install
+
+CMD ["node" "app.js"]

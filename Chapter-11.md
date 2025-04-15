@@ -27,6 +27,8 @@
 
 - Another question is that what is the difference b/w "RUN" and "CMD" command. I can use "RUN" command to run "node app.js". A "Dockerfile" can have multiple "RUN" commands but only one "CMD" command. It marks for "Dockerfile" that this is the command you want to execute as an entry point.
 
+- Another command is "WORKDIR". The WORKDIR instruction in a Dockerfile sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that come after it.
+
 - "Dockerfile" is always the part of the application code.
 
 - [IMPORTANT] - Checkout for "Dockerfile" in the "dockerproject".
