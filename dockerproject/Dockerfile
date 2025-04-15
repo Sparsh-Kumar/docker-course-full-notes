@@ -1,7 +1,7 @@
 FROM node:23-alpine
 
-# ENV PORT=9000 \
-#    MONGODB_URL='mongodb+srv://root:root@databasecluster.pmbbtpx.mongodb.net/?retryWrites=true&w=majority&appName=databasecluster'
+ENV PORT=9000 \
+    MONGODB_URL='mongodb://admin:password@localhost:27017/users?authSource=admin'
 
 RUN mkdir -p /home/source
 
