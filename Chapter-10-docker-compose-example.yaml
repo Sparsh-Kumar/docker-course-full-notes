@@ -1,5 +1,13 @@
 version: '3'
 services:
+  # myapp:
+  #   image:
+  #    377029775554.dkr.ecr.us-east-1.amazonaws.com/myapp:v1.1
+  #   ports:
+  #    - 8000:8000
+  #   environment:
+  #    - PORT=8000
+  #    - MONGODB_URL=mongodb://admin:password@165.232.189.19:27017/users?authSource=admin
   mongodb:
     image:
       mongo
@@ -8,6 +16,8 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - mongo-data:/data/db
   mongo-express:
     image:
       mongo-express
@@ -21,3 +31,6 @@ services:
       always
     depends_on:
       - mongodb
+volumes:
+  mongo-data: # Name of the volume
+    driver: local # It is an indication that docker should create that storage on host local file system.
