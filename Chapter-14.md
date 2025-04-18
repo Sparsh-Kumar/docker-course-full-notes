@@ -24,4 +24,7 @@
 -  [IMPORTANT] - Check out image ('./images/DockerRegistryNaming.png')
 
 
-
+- After changing the name of the application image using ```docker tag``` command, we can use the given below command to push it to AWS ECR
+    ```
+    docker push {{REGISTRY_DOMAIN}}/{{IMAGE_NAME}}:{{TAG}}
+    ```
