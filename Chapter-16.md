@@ -4,7 +4,7 @@
 - In our case suppose, we want to deploy the image we created for our application. Now we have logged into DEV server and we want to run our image (Let's say the name is myapp:v1.0) that we just pushed into private repository and the mongoDB image and mongo-express image as well on DEV server.
 - The image "myapp:v1.0" will be pulled from AWS ECR and mongo image & mongo-express image would be pulled from Dockerhub.
 
-- The only change we need to do is to modify the existins "docker-compose.yaml" file of the project in a way given below.
+- The only change we need to do is to create a new "docker-compose.yaml" file of the project using the existing one in a way given below.
 
 ```
 version: '3'
