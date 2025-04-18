@@ -2,7 +2,7 @@ version: '3'
 services:
   # myapp:
   #   image:
-  #    377029775554.dkr.ecr.us-east-1.amazonaws.com/myapp:v1.0
+  #    377029775554.dkr.ecr.us-east-1.amazonaws.com/myapp:v1.1
   #   ports:
   #    - 8000:8000
   #   environment:
